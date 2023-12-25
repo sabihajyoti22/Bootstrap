@@ -1,0 +1,99 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+*{
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Fascinate', cursive;
+    /* font-weight: bold; */
+}
+p{
+    font-weight: bold;
+}
+/* header starts */
+.navbar{
+    padding: 1% 5%;
+    background-color: rgb(14, 13, 13,0.3);
+}
+.nav-item{
+    font-size: 22px;
+}
+.nav-item:hover{
+    background-color: rgb(255, 5, 1,0.5);
+    border-radius: 10px;
+    transition: all 0.5s;
+    transform: scale(1.1);
+}
+header{
+    background-image: url("./Images/Banner-Bright-Design-Background-Graphics-Gradient-1989514.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.banner-container{
+    height: 100vh; 
+}
+.banner-container h1{
+    font-family: 'Handlee', cursive;
+    background-color: rgb(255, 5, 1,0.5);
+}
+.banner-container button{
+    background-color: rgb(255, 5, 1,0.5);
+    color: white;
+}
+/* header ends */
+
+/* main starts */
+.my-card-container{
+    background-color: antiquewhite;
+    padding: 25px;
+}
+.my-icons{
+    background-color: brown;
+    margin-bottom: 15px;
+}
+.card{
+    padding: 2px;
+    color: black;
+    font-weight: bold;
+    background-color: antiquewhite;
+    border: 3px solid brown;
+    border-radius: 10px;
+}
+.card:hover{
+    box-shadow: 0 8px 8px brown;
+    transition: 0.7s all;
+    transform: scale(1.1);
+}
+.about-me-hr{
+    border: 5px dotted black;
+    width: 30px;
+    border-bottom: none;
+    opacity: 1;
+    margin: 0 auto;
+}
+.about-me-container button{
+    background-color: brown;
+    color: white;
+}
+.about-me-container button:hover{
+    color: black;
+}
+
+
+
+.test-row{
+    background-color: bisque;
+    height: 500px;
+}
+.test-col{
+    background-color: orangered;
+    color: white;
+    /* margin: 5px; */
+}

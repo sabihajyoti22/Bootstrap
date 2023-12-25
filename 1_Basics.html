@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics of Bootstrap</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        .my-link-style:hover{
+            text-decoration: underline;
+        }
+        .my-container-style{
+            background-color: #0d0442;
+        }
+        .my-heading-style{
+            color: white;
+            font-style: oblique;
+        }
+        .my-hr-style{
+            border: 8px dotted white;
+            border-bottom: none;
+            width: 150px;
+            margin: 0 auto;
+            opacity: 1
+        }
+    </style>
+
+</head>
+<body>
+    <!-- Conatainer -->
+    <div class="container-fluid">
+        <h1>Container-fluid/ Container</h1>
+        <div>
+            <h2>Div 1</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis expedita, officia neque nam iste tenetur culpa reprehenderit aliquid ut corrupti at quos, porro illum voluptatibus hic voluptate odit, nobis id!</p>
+        </div>
+        <div>
+            <h2>Div 2</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis expedita, officia neque nam iste tenetur culpa reprehenderit aliquid ut corrupti at quos, porro illum voluptatibus hic voluptate odit, nobis id!</p>
+        </div>
+        <div>
+            <h2>Div 3</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis expedita, officia neque nam iste tenetur culpa reprehenderit aliquid ut corrupti at quos, porro illum voluptatibus hic voluptate odit, nobis id!</p>
+        </div>
+        <div>
+            <h2>Div 4</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis expedita, officia neque nam iste tenetur culpa reprehenderit aliquid ut corrupti at quos, porro illum voluptatibus hic voluptate odit, nobis id!</p>
+        </div>
+    </div>
+    
+    <!-- Grid -->
+    <div class="container">
+        <h1>Grid with Margin and Padding</h1>
+        <div class="row p-3">
+            <div class="col-lg-3 col-md-6 col-sm-12 bg-warning p-2">
+                <h2>Column 1</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur voluptatum tempore facilis voluptates quisquam commodi accusantium, molestias inventore quasi nobis ex. Beatae nulla sapiente minima quasi laudantium nemo eum nihil maxime possimus unde veniam iusto similique, minus, nisi itaque error voluptatem quam provident porro. Sapiente error excepturi dolorum quo iusto.</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 bg-warning p-2">
+                <h2>Column 2</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur voluptatum tempore facilis voluptates quisquam commodi accusantium, molestias inventore quasi nobis ex. Beatae nulla sapiente minima quasi laudantium nemo eum nihil maxime possimus unde veniam iusto similique, minus, nisi itaque error voluptatem quam provident porro. Sapiente error excepturi dolorum quo iusto.</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 bg-warning p-2">
+                <h2>Column 3</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur voluptatum tempore facilis voluptates quisquam commodi accusantium, molestias inventore quasi nobis ex. Beatae nulla sapiente minima quasi laudantium nemo eum nihil maxime possimus unde veniam iusto similique, minus, nisi itaque error voluptatem quam provident porro. Sapiente error excepturi dolorum quo iusto.</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 bg-warning p-2">
+                <h2>Column 4</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur voluptatum tempore facilis voluptates quisquam commodi accusantium, molestias inventore quasi nobis ex. Beatae nulla sapiente minima quasi laudantium nemo eum nihil maxime possimus unde veniam iusto similique, minus, nisi itaque error voluptatem quam provident porro. Sapiente error excepturi dolorum quo iusto.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image and Border -->
+
+    <div class="container bg-info p-4">
+        <img src="./image.jpg" alt="Sabiha Nasrin Jyoti" class="d-block m-auto img-fluid rounded-circle">
+    </div>
+    
+    <!-- Text and Font -->
+
+    <div class="container-fluid">
+        <header class="bg-primary p-3 mt-2 text-white text-center">
+            <h1>Traveling Bucketlist</h1>
+        </header>
+        <main>
+            <h2 class="text-center m-4 fw-bold">In Bangladesh</h2>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 tetx">
+                    <i class="fa-solid fa-umbrella-beach bg-primary p-3 mb-2 fa-2x text-white rounded-circle"></i>
+                    <h4>Cox's Bazar</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur esse ut aliquam sapiente id voluptas quos dignissimos minus nihil porro?</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <i class="fa-solid fa-mountain-sun bg-primary p-3 mb-2 fa-2x text-white rounded-circle"></i>
+                    <h4>Sajek</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur esse ut aliquam sapiente id voluptas quos dignissimos minus nihil porro?</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <i class="fa-solid fa-leaf bg-primary p-3 mb-2 fa-2x text-white rounded-circle"></i>
+                    <h4>Sylhet</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur esse ut aliquam sapiente id voluptas quos dignissimos minus nihil porro?</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <i class="fa-solid fa-tree bg-primary p-3 mb-2 fa-2x text-white rounded-circle"></i>
+                    <h4>Mangrove Forest</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur esse ut aliquam sapiente id voluptas quos dignissimos minus nihil porro?</p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <h2 class="bg-primary text-white p-3 text-center">Footer</h2>
+        </footer>
+    </div>
+
+    <!-- Dismissible Alert Button -->
+    <h1 class="title text-center">Dissmissble Alert Button</h1>
+    <div class="alert alert-info alert-dismissible" role="alert">
+        <button class="btn-close"
+        data-bs-dismiss="alert"
+        aria-label="close">
+        </button>
+        Dismiss this section
+    </div>
+
+    <!-- Blockquote and Abbreviations -->
+    <h1 class="title text-center">Blockquote and Abbreviations</h1>
+    <div class="container">
+        <div class="row">
+            <div class="bg-light col-lg-4">
+                <blockquote class="blockquote p-4">
+                    <div class="text-center">
+                        <i class="fa-solid fa-user-pen fa-2x border border-secondary border-3 p-2 rounded-4 my-1"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sapiente in sunt modi porro vel tempora illo corrupti corporis neque? Praesentium nesciunt minima iure ullam ab repudiandae corrupti aspernatur, sint incidunt minus, et libero itaque ipsa aliquid dolorum repellendus harum? Tempore quia ducimus maiores! Eligendi quisquam consequatur alias dolor qui! <abbr title="Point of View">POV</abbr></p>
+                    <footer class="blockquote-footer">
+                        Mr. Lorem in <cite>Dummy Text</cite>
+                    </footer>
+                </blockquote>
+            </div>
+            <div class="bg-light col-lg-4">
+                <blockquote class="blockquote p-4">
+                    <div class="text-center">
+                        <i class="fa-solid fa-user-pen fa-2x border border-secondary border-3 p-2 rounded-4 my-1"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sapiente in sunt modi porro vel tempora illo corrupti corporis neque? Praesentium nesciunt minima iure ullam ab repudiandae corrupti aspernatur, sint incidunt minus, et libero itaque ipsa aliquid dolorum repellendus harum? Tempore quia ducimus maiores! Eligendi quisquam consequatur alias dolor qui! <abbr title="Point of View">POV</abbr></p>
+                    <footer class="blockquote-footer">
+                        Mr. Lorem in <cite>Dummy Text</cite>
+                    </footer>
+                </blockquote>
+            </div>
+            <div class="bg-light col-lg-4">
+                <blockquote class="blockquote p-4">
+                    <div class="text-center">
+                        <i class="fa-solid fa-user-pen fa-2x border border-secondary border-3 p-2 rounded-4 my-1"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sapiente in sunt modi porro vel tempora illo corrupti corporis neque? Praesentium nesciunt minima iure ullam ab repudiandae corrupti aspernatur, sint incidunt minus, et libero itaque ipsa aliquid dolorum repellendus harum? Tempore quia ducimus maiores! Eligendi quisquam consequatur alias dolor qui! <abbr title="Point of View">POV</abbr></p>
+                    <footer class="blockquote-footer">
+                        Mr. Lorem in <cite>Dummy Text</cite>
+                    </footer>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+
+    <!-- Button, Button Groups and List Group -->
+    <h1 class="title text-center">Button, Button Group and List Group</h1>
+    <div class="btn-group m-4">
+        <button class="btn btn-outline-primary m-1">
+            Visit my site
+        </button>
+        <button class="btn btn-outline-primary m-1">
+            About me
+        </button>
+        <button class="btn btn-outline-primary m-1">
+            Contact Me
+        </button>
+    </div>
+
+    <div class="m-4">
+        <ul class="list-group">
+            <li class="list-group-item bg-primary text-white fs-4 my-1">List 1</li>
+            <li class="list-group-item bg-success text-white fs-4 my-1">List 2</li>
+            <li class="list-group-item bg-warning text-white fs-4 my-1">List 3</li>
+            <li class="list-group-item bg-info text-white fs-4 my-1">List 4</li>
+        </ul>
+    </div>
+    
+    <!-- Collapse and Pagination -->
+    <div class="m-4 bg-dark p-1">
+        <ul class="pagination m-auto justify-content-center">
+            <li class="page-item me-1"><a href="#" class="page-link">1</a></li>
+            <li class="page-item me-1"><a href="#" class="page-link">2</a></li>
+            <li class="page-item me-1"><a href="#" class="page-link">3</a></li>
+            <li class="page-item"><a href="#" class="page-link">4</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <h3>Collapse</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, repellat quos laudantium ullam quis aut modi ipsa repudiandae vel corrupti, ipsum harum, tempora porro sapiente suscipit in rem iste ea est! Dolorem exercitationem voluptate quod, maxime ut debitis neque accusamus magni rerum omnis, officia culpa. Ad natus eum, praesentium ipsa quos doloremque dolorem ea quidem animi ipsum ullam possimus sit odio rem vel quas dignissimos nisi alias expedita dolorum nobis corporis mollitia a! Magnam fugit est quibusdam aut sed, exercitationem magni quis eius adipisci velit expedita ex porro fuga. Dolorum, accusantium illo natus laudantium culpa necessitatibus consectetur nobis explicabo? Consectetur!
+        </p>
+        <a href="#demo" data-bs-toggle="collapse" >Learn More</a>
+        <div id="demo" class="collapse">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut molestias, consequuntur consectetur harum vitae eos laborum temporibus nihil ducimus labore incidunt ut repellendus illo magni assumenda accusantium sequi minus odio beatae repellat, omnis eius. Repudiandae in unde ab voluptatem laborum ea optio enim tempore eos repellat consequatur, sapiente ad quos.</p>
+        </div>
+    </div>
+
+    <!-- Navigation Menu -->
+
+    <div class="container-fluid m-3 p-3 bg-success text-white">
+        <div class="row">
+            <div class="col-lg-5">
+                <h1>Portfo<span class="text-warning">lio.</span></h1>
+            </div>
+            <div class="col-lg-7">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item me-3 fs-5 fw-bold"><a href="" class="text-white nav-link my-link-style">Home</a></li>
+                    <li class="nav-item me-3 fs-5 fw-bold"><a href="" class="text-white nav-link my-link-style">About Me</a></li>
+                    <li class="nav-item me-3 fs-5 fw-bold"><a href="" class="text-white nav-link my-link-style">Contact Me</a></li>
+                    <li class="nav-item me-3 fs-5 fw-bold"><a href="" class="text-white nav-link my-link-style">Projects</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Toggleable Dynamic Tabs/pills -->
+    <div class="container">
+        <ul class="nav nav-tabs">
+            <li class="nav-item"><a href="#education" class="nav-link text-danger fw-bold active" data-bs-toggle="tab">Education</a></li>
+            <li class="nav-item"><a href="#skills" class="nav-link text-danger fw-bold" data-bs-toggle="tab">Skills</a></li>
+            <li class="nav-item"><a href="#hobby" class="nav-link text-danger fw-bold" data-bs-toggle="tab">Hobby</a></li>
+        </ul>
+    
+        <div class="tab-content">
+            <p id="education" class="tab-pane active">1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, dolorem ut? Eos esse fugiat ipsa eius sit dolorem doloribus enim dignissimos in? Atque expedita est libero dolores, enim nesciunt quibusdam, incidunt delectus recusandae quam aliquam ratione, mollitia molestias facilis itaque voluptas suscipit! Aspernatur expedita, ipsa deleniti ratione dolorum impedit quo.</p>
+            <p id="skills" class="tab-pane fade">2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, dolorem ut? Eos esse fugiat ipsa eius sit dolorem doloribus enim dignissimos in? Atque expedita est libero dolores, enim nesciunt quibusdam, incidunt delectus recusandae quam aliquam ratione, mollitia molestias facilis itaque voluptas suscipit! Aspernatur expedita, ipsa deleniti ratione dolorum impedit quo.</p>
+            <p id="hobby" class="tab-pane fade">3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, dolorem ut? Eos esse fugiat ipsa eius sit dolorem doloribus enim dignissimos in? Atque expedita est libero dolores, enim nesciunt quibusdam, incidunt delectus recusandae quam aliquam ratione, mollitia molestias facilis itaque voluptas suscipit! Aspernatur expedita, ipsa deleniti ratione dolorum impedit quo.</p>
+            
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <a href="" class="navbar-brand">Navigation Bar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="" class="nav-link">Item 1</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Item 2</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Item 3</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Item 4</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores, necessitatibus quibusdam. Quas quasi culpa porro nihil cupiditate eaque similique iusto explicabo, quidem totam! Facilis accusamus odio deserunt libero corporis reiciendis.</p>
+    </div>
+
+    <!-- Card -->
+
+    <div class="container">
+        <h2 class="title text-center">Web Development</h2>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">HTML</h4>
+                    </div>
+                    <img class="card-img-top" src="./html.jpg" alt="html">
+                    <div class="card-body">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque quae dicta eius sapiente ipsam perspiciatis nobis, repellat animi blanditiis vero qui dolorem ducimus dignissimos cumque inventore facere laboriosam laborum? Omnis.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="">Visit this site</a>
+                    </div>
+                    <a class="card-link stretched-link" href="https://www.w3schools.com/html/" target="_blank"></a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">CSS</h4>
+                    </div>
+                    <img class="card-img-top" src="./css.jpg" alt="html">
+                    <div class="card-body">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque quae dicta eius sapiente ipsam perspiciatis nobis, repellat animi blanditiis vero qui dolorem ducimus dignissimos cumque inventore facere laboriosam laborum? Omnis.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="">Visit this site</a>
+                    </div>
+                    <a class="card-link stretched-link" href="https://www.w3schools.com/css/default.asp" target="_blank"></a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">JavaScript</h4>
+                    </div>
+                    <img class="card-img-top " src="./js.png" alt="html">
+                    <div class="card-body">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque quae dicta eius sapiente ipsam perspiciatis nobis, repellat animi blanditiis vero qui dolorem ducimus dignissimos cumque inventore facere laboriosam laborum? Omnis.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="">Visit this site</a>
+                    </div>
+                    <a class="card-link stretched-link" href="https://www.w3schools.com/js/default.asp" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Media Object (a class from bootstrap4 ) -->
+   <div class="media-section mt-2">
+    <h2 class="title text-center">Media Object</h2>
+
+        <div class="media border m-1 p-2">
+            <img src="./html.jpg" class="align-self-start mr-3" alt="...">
+            <div class="media-body">
+                <h5 class="mt-0">HTML</h5>
+                <p>I’m gon’ put her in a coma. You give a hundred reasons why, and you say you're really gonna try. So I sat quietly, agreed politely. Suiting up for my crowning battle. And on my 18th Birthday we got matching tattoos. So très chic, yeah, she's a classic. I am ready for the road less traveled.</p>
+                <p>I'm walking on air (tonight). But down to earth. You're original, cannot be replaced. But in another life I would be your girl. We drove to Cali and got drunk on the beach. We can dance, until we die, you and I, will be young forever. Saw you downtown singing the Blues.</p>
+            </div>
+        </div>
+        <div class="media border m-1 p-2">
+            <div class="media-body">
+                <h5 class="mt-0">CSS</h5>
+                <p>I’m gon’ put her in a coma. You give a hundred reasons why, and you say you're really gonna try. So I sat quietly, agreed politely. Suiting up for my crowning battle. And on my 18th Birthday we got matching tattoos. So très chic, yeah, she's a classic. I am ready for the road less traveled.</p>
+                <p>I'm walking on air (tonight). But down to earth. You're original, cannot be replaced. But in another life I would be your girl. We drove to Cali and got drunk on the beach. We can dance, until we die, you and I, will be young forever. Saw you downtown singing the Blues.</p>
+            </div>
+            <img src="./css.jpg" class="align-self-start mr-3" alt="...">
+        </div>
+        <div class="media border m-1 p-2">
+            <img src="./js.png" class="align-self-center mr-3" alt="...">
+            <div class="media-body">
+                <h5 class="mt-0">HTML</h5>
+                <p>I’m gon’ put her in a coma. You give a hundred reasons why, and you say you're really gonna try. So I sat quietly, agreed politely. Suiting up for my crowning battle. And on my 18th Birthday we got matching tattoos. So très chic, yeah, she's a classic. I am ready for the road less traveled.</p>
+                <p>I'm walking on air (tonight). But down to earth. You're original, cannot be replaced. But in another life I would be your girl. We drove to Cali and got drunk on the beach. We can dance, until we die, you and I, will be young forever. Saw you downtown singing the Blues. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi laborum esse amet debitis modi, illo corrupti, dicta natus voluptatem tempore ab obcaecati deleniti in sapiente inventore repellendus. Itaque rem officia distinctio aliquid veritatis doloremque voluptates dolorum fugiat, autem cupiditate cumque aliquam atque tempore omnis pariatur molestias error. Nulla rerum veniam cum commodi laudantium iusto accusamus dolor beatae deleniti odit reiciendis corporis, eius saepe inventore, quos repellat, velit libero veritatis. Tempora error, nulla similique a magnam tempore, vitae commodi ratione tenetur enim quos harum minus facilis, atque sapiente voluptatibus quod? Optio ipsum consectetur neque vel nulla assumenda ex expedita aliquid excepturi.</p>
+            </div>
+        </div>
+   </div>
+
+
+   <!-- Table -->
+
+   <div class="container">
+    <h2 class="title text-center mt-2">Table</h2>
+    <table class="table table-striped table-hover">
+        <thead>
+            <th>Qualification</th>
+            <th>Institution</th>
+            <th>Year</th>
+            <th>CGPA</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>SSC</td>
+                <td>National Ideal School and College</td>
+                <td>2014</td>
+                <td>4.88</td>
+            </tr>
+            <tr>
+                <td>HSC</td>
+                <td>South Point School and College</td>
+                <td>2016</td>
+                <td>5.00</td>
+            </tr>
+            <tr>
+                <td>BSc</td>
+                <td>Ahsanullah University of Science and Technology</td>
+                <td>2022</td>
+                <td>3.57</td>
+            </tr>
+        </tbody>
+    </table>
+   </div>
+
+   <!-- Form -->
+
+   <div class="container">
+        <h2 class="title text-center mt-2">Form</h2>
+
+        <form class="w-50 p-4 bg-success text-white">
+            <div class="mb-2">
+                <label for="email">Email:</label>
+                <input class="form-control" type="email">
+                <p class="form-text text-white">We don't share your email with anyone</p>
+            </div>
+            <div class="mb-2">
+                <label for="password">Password:</label>
+                <input class="form-control" type="password">
+            </div>
+
+            <div class="mb-2">
+                <div class="form-check-inline">
+                    <input type="radio" name="gender" class="form-check-input">
+                    <label for="male">Male</label>
+                </div>
+                <div class="form-check-inline">
+                    <input type="radio" name="gender" class="form-check-input">
+                    <label for="female">Female</label>
+                </div>
+            </div>
+            
+            <div class="form-check-inline">
+                <input type="checkbox" name="trc" class="form-check-input">
+                <label for="trc">Accept terms and conditions</label>
+            </div>
+
+            <div class="mb-2">
+                <label for="deparment">Department:</label>
+                <select name="deparment" id="department" class="form-select">
+                    <option value="cse">CSE</option>
+                    <option value="eee" selected>EEE</option>
+                    <option value="ipe">IPE</option>
+                </select>
+            </div>
+
+            <div>
+                <button class="btn btn-outline-warning mt-2 text-white" type="submit">Register</button>
+            </div>
+       </form>
+   </div>
+
+   <!-- Carousel -->
+
+   <div class="container my-container-style mt-4 p-3 text-center">
+    <h1 class="my-heading-style">Web Development</h1>
+    <hr class="my-hr-style">
+
+    <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner ">
+          <div class="carousel-item text-white active">
+            <div class="text-center font-italic">
+                <p class="px-5 py-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum placeat eius iure, officia error odio doloremque debitis minus modi, tempore vel repudiandae velit consequatur exercitationem. </p>
+                <img src="./html.jpg" class="d-block w-30 m-auto rounded-4" alt="...">
+                <h3 class="mb-5">HTML</h3>
+            </div>
+          </div>
+          <div class="carousel-item text-white">
+            <div class="text-center font-italic">
+                <p class="px-5 py-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum placeat eius iure, officia error odio doloremque debitis minus modi, tempore vel repudiandae velit consequatur exercitationem. </p>
+                <img src="./css.jpg" class="d-block w-30 m-auto rounded-4" alt="...">
+                <h3 class="mb-5">CSS</h3>
+            </div>
+          </div>
+          <div class="carousel-item text-white">
+            <div class="text-center font-italic">
+                <p class="px-5 py-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum placeat eius iure, officia error odio doloremque debitis minus modi, tempore vel repudiandae velit consequatur exercitationem. </p>
+                <img src="./js.png" class="d-block w-30 m-auto rounded-4" alt="...">
+                <h3 class="mb-5">JavaScript</h3>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+   </div>
+
+   <!-- Badge, Tooltip and ProgressBar -->
+
+   <div class="container">
+        <h2 class="title text-center bg-dark text-white p-2 my-2">Badge, Tooltip and ProgressBar</h2>
+
+        <h4>Add Badge <span class="bg-secondary badge rounded-pill">New</span></h4>
+        <button class="btn bg-primary text-white">Inbox <span class="rounded-circle bg-danger text-white badge">25</span></button>
+
+        <div class="progress my-2">
+            <div class="progress-bar progress-bar-striped bg-info w-25" role="progressbar"></div>
+            <div class="progress-bar progress-bar-striped bg-primary w-25" role="progressbar"></div>
+            <div class="progress-bar progress-bar-striped bg-warning w-25" role="progressbar"></div>
+            <div class="progress-bar progress-bar-striped bg-danger w-25" role="progressbar"></div>
+        </div>
+   </div>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

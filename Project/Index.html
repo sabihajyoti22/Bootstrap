@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Demo</title>
+
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Fontawsome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:ital,wght@1,100&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <!-- External css -->
+    <link rel="stylesheet" href="Style.css">
+
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- header starts -->
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+        
+                  <a class="navbar-brand" href="#">
+                    <img src="./Images/Logo.png" alt="" height="70px" width="70px">
+                  </a>
+        
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fas fa-bars navbar-toggler-icon text-white"></i></span>
+                  </button>
+        
+                  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item ">
+                        <a class="nav-link text-white font-weight-bold text-center active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-white font-weight-bold text-center" href="#">About Me</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-white font-weight-bold text-center" href="#">Projects</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-white font-weight-bold text-center" href="#">Contact Me</a>
+                      </li>
+                    </ul>
+                  </div>
+        
+                </div>
+            </nav>
+            <!-- Banner -->
+            <div class="banner-container d-flex justify-content-center align-items-center">
+                <div class="banner-contents text-center">
+                    <h1 class="font-weight-bold text-white p-4 rounded-3 mb-2">Learn Something New!!!</h1>
+                    <button class="btn me-1" onclick="location.href='#tutorial'"><i class="fa-solid fa-play p-1"></i>Tutorial</button>
+
+                    <button class="btn" onclick="window.open('https://www.youtube.com/c/anisulislamrubel')"><i class="fa-brands fa-youtube p-1"></i>Subscribe</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- main starts -->
+        <main>
+            <div class="container-fluid mt-2 my-card-container">
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <i class="fa-solid fa-hand-holding-dollar fa-3x rounded-circle text-white p-3 my-icons"></i>
+                                <h3>Free to Use</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quasi, quos quia facilis aperiam magnam inventore doloribus debitis ratione assumenda.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <i class="fa-brands fa-free-code-camp fa-3x rounded-circle text-white p-3 my-icons"></i>
+                                <h3>Easy to Learn</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quasi, quos quia facilis aperiam magnam inventore doloribus debitis ratione assumenda.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <i class="fa-brands fa-rocketchat fa-3x rounded-circle text-white p-3 my-icons"></i>
+                                <h3>Fast Response</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quasi, quos quia facilis aperiam magnam inventore doloribus debitis ratione assumenda.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- about me starts -->
+                <h2 class="text-center">About Me</h2>
+                <hr class="about-me-hr">
+                <div class="container about-me-container mt-4">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <i class="fa-solid fa-user fa-2x rounded-circle text-white p-3 my-icons"></i>
+                            <h4>Personal Information</h4>
+                            <ul>
+                                <li>Duo ea lorem stet labore et no et. Dolor stet.</li>
+                                <li>Duo ea lorem stet labore et no et.</li>
+                                <li>Duo ea lorem stet labore et no et. Dolor stet.</li>
+                                <li>Duo ea lorem stet labore et no et.</li>
+                            </ul>
+                            <button class="btn me-1">Download CV <i class="fa-solid fa-circle-arrow-down p-1"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-7">
+                        </div>
+                        <div class="col-lg-5">
+                            <i class="fa-solid fa-graduation-cap fa-2x rounded-circle text-white p-3 my-icons"></i>
+                            <h4>Education</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima repudiandae labore at suscipit, asperiores quis perferendis possimus rerum quam repellendus. Ex a voluptates non alias rem molestias, doloremque iure qui?</p>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <!-- tutorial starts -->
+                <h2 class="text-center">Tutorial</h2>
+                <hr class="about-me-hr">
+                <div class="container mt-4" id="tutorial">
+                    <div class="row mb-3">
+                        <div class="col-lg-3">
+                            <div class="card align-items-center">
+                                <div class="card-header">
+                                    <img class="" src="./Images/html.jpg" alt="" height="120" width="200px">
+                                </div>
+                                <div class="card-body">
+                                    <h4>HTML</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card align-items-center">
+                                <div class="card-header">
+                                    <img class="" src="./Images/html.jpg" alt="" height="120" width="200px">
+                                </div>
+                                <div class="card-body">
+                                    <h4>HTML</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card align-items-center">
+                                <div class="card-header">
+                                    <img class="" src="./Images/html.jpg" alt="" height="120" width="200px">
+                                </div>
+                                <div class="card-body">
+                                    <h4>HTML</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card align-items-center">
+                                <div class="card-header">
+                                    <img class="" src="./Images/html.jpg" alt="" height="120" width="200px">
+                                </div>
+                                <div class="card-body">
+                                    <h4>HTML</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="card align-items-center">
+                                <div class="card-header">
+                                    <img class="" src="./Images/css.jpg" alt="" height="120" width="200px">
+                                </div>
+                                <div class="card-body">
+                                    <h4>CSS</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card align-items-center">
+                                <div class="card-header">
+                                    <img class="" src="./Images/css.jpg" alt="" height="120" width="200px">
+                                </div>
+                                <div class="card-body">
+                                    <h4>CSS</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card align-items-center">
+                                <div class="card-header">
+                                    <img class="" src="./Images/css.jpg" alt="" height="120" width="200px">
+                                </div>
+                                <div class="card-body">
+                                    <h4>CSS</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card align-items-center">
+                                <div class="card-header">
+                                    <img class="" src="./Images/css.jpg" alt="" height="120" width="200px">
+                                </div>
+                                <div class="card-body">
+                                    <h4>CSS</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+                  <div class="col">
+                    <div class="test-col p-3 border">Row column</div>
+                  </div>
+                  <div class="col">
+                    <div class="p-3 border bg-light">Row column</div>
+                  </div>
+                  <div class="col">
+                    <div class="p-3 border bg-light">Row column</div>
+                  </div>
+                  <div class="col">
+                    <div class="p-3 border bg-light">Row column</div>
+                  </div>
+                  <div class="col">
+                    <div class="p-3 border bg-light">Row column</div>
+                  </div>
+                  <div class="col">
+                    <div class="p-3 border bg-light">Row column</div>
+                  </div>
+                  <div class="col">
+                    <div class="p-3 border bg-light">Row column</div>
+                  </div>
+                  <div class="col">
+                    <div class="p-3 border bg-light">Row column</div>
+                  </div>
+                  <div class="col">
+                    <div class="p-3 border bg-light">Row column</div>
+                  </div>
+                  <div class="col">
+                    <div class="p-3 border bg-light">Row column</div>
+                  </div>
+                </div>
+              </div>
+            
+        </main>
+    </div>
+
+
+
+
+
+      <!-- JavaScript cdn -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
